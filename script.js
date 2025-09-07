@@ -13,9 +13,9 @@ window.onload = () => {
 
 // Long letter split into paragraphs
 const messages = [
-  "Uhh I made this program for you because I know this will be the last message that I will be sending because I don’t want to bother you na, and I know na you’re in college studying.\n\ ",
+  "Uhh I made this program for you because I know this time that it will be the last message that I will be sending you because I don’t want to bother you na, and I know na you’re in college studying.\n\ ",
 
-  "Hello my baby, I know it’s crazy that I am still calling you baby, but I just can’t call you by your name.\n\ Every time I wanted to speak your name it hurts me, even because of everything that I have done to you which I deeply regret.\n\ By the way, this isn’t a another apology letter it's just i wanted to tell you something, but I think this is my last message so i can stop bothering you na.\n\ ",
+  "Hello my baby, I know it’s crazy that I am still calling you baby, but I just can’t call you by your real name.\n\ Because bumibigat pakiramdam ko pag bina banggit ko pangalan mo and it is because of everything that I have done to you which I deeply regret.\n\ By the way, this isn’t a another apology letter it's just i wanted to tell you something, but I think this is my last message so i that can stop bothering you na.\n\ ",
 
   "But yeah, in the last letter I’ve sent you, I said that I will be sending you the notes that I have written to you once I get my phone fixed.\n\ But the thing is, I’ve forgotten that I deleted it because nakita ni mama yung cut ko and she demanded to see my phone and asked me kung bakit ko nagawa yon.\n\ Pero di ko sinabi kung bakit and kung anong reason.\n\ And to be honest, I think dahil sa nagawa ko sayo.\n\ I don’t know, but that time it came back haunting me and all, so that’s why I did the one and only coping mechanism that I knew of, which is to cut.\n\ But never mind the cutting part, the real reason that I sent you this email is the contents of the notes that I had written for you in the past months na we ended things.\n\ ",
 
@@ -100,3 +100,4 @@ document.body.addEventListener("click", () => {
 volumeSlider.addEventListener("input", (e) => {
   bgMusic.volume = e.target.value;
 });
+
