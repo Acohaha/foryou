@@ -40,7 +40,7 @@ function typeWriter() {
   if (charIndex < messages[msgIndex].length) {
     messageEl.innerHTML += messages[msgIndex].charAt(charIndex);
     charIndex++;
-    setTimeout(typeWriter, 50); // typing speed
+    setTimeout(typeWriter, 25); // typing speed
   } else {
     // Fade out current message before next
     setTimeout(() => {
@@ -100,4 +100,5 @@ document.body.addEventListener("click", () => {
 volumeSlider.addEventListener("input", (e) => {
   bgMusic.volume = e.target.value;
 });
+
 
