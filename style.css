@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #000, #555);
+  font-family: sans-serif;
+  overflow: hidden;
+  color: white;
+}
+
+@font-face {
+  font-family: 'FBCaramelApple';
+  src: url('FBCaramelApple.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* Music volume control */
+.controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 10;
+}
+
+.controls input[type="range"] {
+  width: 80px;
+  height: 4px;
+}
+
+/* Intro message */
+.intro {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 2s;
+   font-family: 'FBCaramelApple', monospace;
+}
+
+.intro.show {
+  opacity: 1;
+}
+
+.intro.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Typing container */
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 1.2s ease; /* smooth fade in/out */
+  user-select: none;
+  pointer-events: none;
+  white-space: pre-line;
+  font-family: 'FBCaramelApple', monospace;
+}
